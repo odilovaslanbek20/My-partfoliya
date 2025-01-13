@@ -1,0 +1,82 @@
+@use "./mixin" as *;
+
+.show{
+    margin-top: 20px;
+}
+
+.shov__list{
+    @include grid(repeat(3,1fr), 20px);
+    margin: 0;
+    padding: 0;
+}
+
+.show__hedding{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+
+  .card:hover {
+    transform: rotate(-3deg) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #ff7eb3, transparent 70%);
+    transform: rotate(45deg);
+    z-index: 1;
+    opacity: 0.1;
+  }
+
+  .card .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff758c;
+    z-index: 2;
+    position: relative;
+  }
+
+  .card .description {
+    font-size: 1em;
+    color: #333;
+    z-index: 2;
+    position: relative;
+  }
+
+  .card .button {
+    display: inline-block;
+    padding: 10px 0px;
+    text-align: center;
+    width: 150px;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: background 0.3s ease-in-out, transform 0.3s;
+    position: relative;
+    z-index: 2;
+  }
+
+  .card .button:hover {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    transform: scale(1.1);
+  }

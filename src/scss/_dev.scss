@@ -1,0 +1,82 @@
+.dev{
+    margin-top: 80px;
+}
+
+.dev__list{
+    @include grid(repeat(10,1fr), 40px);
+    position: relative;
+    overflow: scroll;
+    padding: 50px 20px;
+}
+
+.dev__title{
+    text-align: center;
+    color: #ff758c;
+    margin-left: 20px;
+}
+
+.dev__link{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #ff758c;
+}
+
+.butt{
+    width: 100%;
+    height: 45px;
+    color: white;
+    border-radius: 8px;
+    background: #ff7eb3;
+}
+
+.butt:hover{
+    background: #f2478e;
+    color: white;
+
+}
+
+.dev__link1 i{
+    font-size: 16px
+}
+
+.dev__item{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.124);
+    transition: all 0.3s ease-in;
+}
+
+.dev__item a{
+    @include flex(center, center, 0, row);
+    margin-bottom: 10px;
+}
+
+.dev__item i {
+    font-size: 100px;
+}
+
+.dev__item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.383);
+}
+
+.dev__item img{
+    width: 120px;
+    height: 100px;
+}
+
+.dev__hedding{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.ts{
+    width: 10px;
+    height: 100px;
+    border-radius: 5px;
+}

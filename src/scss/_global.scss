@@ -1,0 +1,51 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: #2C5364; /* Scroll chiziq rangi */
+    border-radius: 5px;
+  }
+  .scroll-container::-webkit-scrollbar-track {
+    background: #F1F1F1;
+  }
+
+body{
+    background-color: #F8F9FA;
+}
+
+.karobka{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width:1400px) {
+    .karobka{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+main{
+    padding-top: 100px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.modal{
+    z-index: 9999;
+}
+
+  

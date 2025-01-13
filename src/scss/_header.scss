@@ -1,0 +1,18 @@
+.header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    z-index: 9999;
+}
+
+.header__title{
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 30px;
+}
+
