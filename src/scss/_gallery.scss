@@ -12,12 +12,11 @@
 }
 
 .gallery__cards{
-    @include grid(repeat(3,1fr), 30px);
-    @include flex(center, center, 30px, row);
+    @include flex(center, center, 60px, row);
 }
 
 .gallery__cards__right{
-    width: 100%;
+    width: 50%;
     @include grid(repeat(2,1fr), 0px);
 }
 
@@ -26,26 +25,12 @@
     padding: 0;
 }
 
-.hr{
-    display: none;
-}
-
-.gallery__cards__left{
-    width: 100%;
-}
-
 .gallery__cards3{
-    width: 100%;
-}
-
-.carousel-item img{
-    width: 200px;
-    height: auto;
-    border-radius: 30px;
-    object-fit: cover;
+    width: 50%;
 }
 
 .carousel img{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     width: 200px;
     height: auto;
     border-radius: 30px;

@@ -7,10 +7,6 @@
     transform: scale(0);
   }
 
-  .gallery__cards__left{
-    display: none;
-  }
-
   .card:hover {
     transform: none;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
@@ -51,6 +47,14 @@
     border: none;
     transform: none;
   }
+
+  .gallery__cards__right{
+    width: 100%;
+}
+
+.gallery__cards3{
+    width: 100%;
+}
 
   .gallery__cards {
     @include grid(repeat(2, 1fr), 30px);
